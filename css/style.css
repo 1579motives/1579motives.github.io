@@ -1,8 +1,8 @@
-@font-face {
-    font-family: "Noto Serif SC";
-    scr: url("../source/font/SourceHanSerifSC-Light.otf") format("otf");
+@font-face{
+    font-family: 'IBMPlexMono-Italic';
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&family=Noto+Serif+TC:wght@300&display=swap');   
 }
-@font-face {
-    font-family: "Noto Serif TC"
-    scr: url("../source/font/SourceHanSerifTC-Light.otf") format("otf");
+​
+body {
+    font-family: ''Noto Serif SC','Noto Serif TC';
 }
