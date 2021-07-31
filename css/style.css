@@ -1,8 +1,10 @@
 @font-face{
-    font-family: 'IBMPlexMono-Italic';
+    font-family: 'Noto Serif TC','Noto Serif SC';
     src: url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&family=Noto+Serif+TC:wght@300&display=swap');   
 }
 ​
 body {
-    font-family: ''Noto Serif SC','Noto Serif TC';
+    font-family: 'Noto Serif SC','Noto Serif TC',serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&family=Noto+Serif+TC:wght@300&display=swap');
+
