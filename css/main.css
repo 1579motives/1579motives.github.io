@@ -16,6 +16,7 @@
   max-width: calc(960px - 6rem);
   width: 80%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&family=Noto+Serif+TC:wght@300&display=swap');
 @media (max-width: 575px) {
   .banner .page-header,
   .banner .page-header .iconfont {
@@ -304,7 +305,7 @@ html {
 }
 html,
 body {
-  font-family: var(--font-family-Noto-Serif-SC);
+  font-family: 'Noto Serif TC',serif,'Noto Serif SC';
 }
 html,
 body,
@@ -894,7 +895,7 @@ img[lazyload] {
 .markdown-body {
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-family: var(--font-family-sans-serif);
+  font-family: 'Noto Serif TC', serif,'Noto Serif SC';
   color: var(--post-text-color);
 }
 .markdown-body h1,
