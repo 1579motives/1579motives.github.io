@@ -64,7 +64,7 @@
   -webkit-appearance: none;
   font-size: 0.75rem;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 
   outline: none;
   -webkit-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -77,7 +77,7 @@
 }
 .copy-btn > i {
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 .copy-btn > span {
   margin-left: 5px;
@@ -168,7 +168,8 @@ footer .beian-police img {
 sup > a::before,
 .footnote-text::before {
   display: block;
-  content: "";
+  content: "綿延";
+  font_family: Noto Serif TC, Note Serif SC, sans-serif;
   margin-top: -5rem;
   height: 5rem;
   width: 1px;
@@ -206,6 +207,7 @@ sup > a::before,
 @media (max-width: 767px) {
   #subtitle {
     font-size: 1.5rem;
+    font_family: "Noto Serif TC", "Note Serif SC";
   }
 }
 @media (max-width: 575px) {
@@ -240,7 +242,7 @@ sup > a::before,
 }
 .scroll-down-bar i {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 
   display: inline-block;
   position: relative;
   padding-top: 2rem;
@@ -302,6 +304,7 @@ sup > a::before,
 }
 html {
   font-size: 16px;
+  font-family: "Noto Serif TC","Noto Serif SC",sans-serif;
 }
 html,
 body {
@@ -317,17 +320,20 @@ body {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   background-color: var(--body-bg-color);
   color: var(--text-color);
+  font-family: "Noto Serif TC","Noto Serif SC",sans-serif;
 }
 body a {
   color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  font-family: "Noto Serif TC","Noto Serif SC",sans-serif;
 }
 body a:hover {
   color: var(--link-hover-color);
   text-decoration: none;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  font-family: "Noto Serif TC","Noto Serif SC",sans-serif;
 }
 code {
   color: inherit;
@@ -905,7 +911,7 @@ img[lazyload] {
 .markdown-body h5,
 .markdown-body h6 {
   color: var(--post-heading-color);
-  font-weight: bold;
+  font-weight: 
   margin-bottom: 0.75em;
   margin-top: 2em;
 }
@@ -925,7 +931,7 @@ img[lazyload] {
   margin: 2rem 0;
 }
 .markdown-body strong {
-  font-weight: bold;
+  font-weight: 
 }
 .markdown-body pre {
   font-size: 85% !important;
@@ -1313,7 +1319,7 @@ mjx-container svg:focus,
 .index-header {
   color: var(--text-color);
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 
   line-height: 1.4;
   white-space: nowrap;
   overflow: hidden;
@@ -1503,7 +1509,7 @@ post-custom {
 }
 .toc-header {
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.2;
 }
 .toc-header,
@@ -1821,7 +1827,7 @@ note-default {
 }
 .about-name {
   font-size: 1.75rem;
-  font-weight: bold;
+  font-weight: 
 }
 .about-intro {
   font-size: 1rem;
@@ -1837,13 +1843,13 @@ note-default {
 }
 .category-item {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 
   display: flex;
   align-items: center;
 }
 .category-subitem {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 
 }
 .category-collapse {
   margin-left: 1.25rem;
@@ -1942,7 +1948,7 @@ note-default {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: $text_color;
-  font-weight: bold;
+  font-weight: 
 }
 .link-intro {
   max-height: 2rem;
