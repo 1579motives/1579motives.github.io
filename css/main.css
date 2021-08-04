@@ -193,7 +193,7 @@ sup > a::before,
   font-size: 0.95rem;
 }
 .footnote-list ol li:before {
-  font-family: "Helvetica Neue", monospace, "Monaco";
+  font-family: "Noto Serif TC","Note Serif SC","Helvetica Neue", monospace, "Monaco";
   content: "[" counter(sectioncounter) "]";
   counter-increment: sectioncounter;
 }
@@ -305,7 +305,7 @@ html {
 }
 html,
 body {
-  font-family: 'Noto Serif TC','Noto Serif SC',sans-serif;
+  font-family: "Noto Serif TC","Noto Serif SC",sans-serif;
 }
 html,
 body,
