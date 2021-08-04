@@ -21,6 +21,7 @@
   .banner .page-header,
   .banner .page-header .iconfont {
     font-size: 0.9rem;
+    font-family: "Noto Serif TC", "Note Serif SC",Georgia,sans-serif,
   }
 }
 .banner[parallax="true"] {
@@ -31,6 +32,7 @@
 @media (max-width: 100vh) {
   header {
     max-height: 100vw;
+    font-weight:200;
   }
   #board {
     margin-top: -1rem !important;
@@ -64,7 +66,7 @@
   -webkit-appearance: none;
   font-size: 0.75rem;
   line-height: 1;
-  font-weight: 
+  font-weight:200;
   outline: none;
   -webkit-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -77,7 +79,7 @@
 }
 .copy-btn > i {
   font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 .copy-btn > span {
   margin-left: 5px;
@@ -169,11 +171,11 @@ sup > a::before,
 .footnote-text::before {
   display: block;
   content: "綿延";
-  font_family: Noto Serif TC, Note Serif SC, sans-serif;
+  font-family: "Noto Serif TC", "Note Serif SC", serif;
   margin-top: -5rem;
   height: 5rem;
   width: 1px;
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 sup > a::before,
 .footnote-text::before {
@@ -194,7 +196,7 @@ sup > a::before,
   font-size: 0.95rem;
 }
 .footnote-list ol li:before {
-  font-family: "Noto Serif TC","Note Serif SC","Helvetica Neue", monospace, "Monaco";
+  font-family: "Noto Serif TC","Note Serif SC",Georgia,"Helvetica Neue", monospace, "Monaco";
   content: "[" counter(sectioncounter) "]";
   counter-increment: sectioncounter;
 }
@@ -207,13 +209,16 @@ sup > a::before,
 @media (max-width: 767px) {
   #subtitle {
     font-size: 1.5rem;
-    font_family: "Noto Serif TC", "Note Serif SC";
+    font-family: "Noto Serif TC", "Note Serif SC",sans-serif;
+    font-weight: 200;
   }
 }
-@media (max-width: 575px) {
+/*@media (max-width: 575px) {
   #subtitle {
     font-size: 1.35rem;
-  }
+    font-family: "Noto Serif TC", "Note Serif SC";
+    font-weight: 300;
+  }*/
 }
 .qr-trigger {
   cursor: pointer;
@@ -242,7 +247,7 @@ sup > a::before,
 }
 .scroll-down-bar i {
   font-size: 2rem;
-  font-weight: 
+  font-weight: 200;
   display: inline-block;
   position: relative;
   padding-top: 2rem;
@@ -308,32 +313,43 @@ html {
 }
 html,
 body {
-  font-family: "Noto Serif TC","Noto Serif SC",sans-serif;
+  font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
+  font-weight:300;
 }
 html,
 body,
 header {
   height: 100%;
   overflow-wrap: break-word;
+  font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
+  font-weight:400;
 }
 body {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   background-color: var(--body-bg-color);
   color: var(--text-color);
-  font-family: "Noto Serif TC","Noto Serif SC",sans-serif;
+  font-family: "Noto Serif TC","Noto Serif SC",serif;!important
+  @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
+  font-weight:300;
 }
 body a {
   color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  font-family: "Noto Serif TC","Noto Serif SC",sans-serif;
+  font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
+  font-weight:300;
 }
 body a:hover {
   color: var(--link-hover-color);
   text-decoration: none;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  font-family: "Noto Serif TC","Noto Serif SC",sans-serif;
+  font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
+  font-weight:300;
 }
 code {
   color: inherit;
@@ -901,7 +917,8 @@ img[lazyload] {
 .markdown-body {
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-family: 'Noto Serif TC','Noto Serif SC',sans-serif;
+  font-family: 'Noto Serif TC','Noto 
+  Serif SC',sans-serif;
   color: var(--post-text-color);
 }
 .markdown-body h1,
@@ -911,7 +928,7 @@ img[lazyload] {
 .markdown-body h5,
 .markdown-body h6 {
   color: var(--post-heading-color);
-  font-weight: 
+  font-weight: 200;
   margin-bottom: 0.75em;
   margin-top: 2em;
 }
@@ -931,7 +948,7 @@ img[lazyload] {
   margin: 2rem 0;
 }
 .markdown-body strong {
-  font-weight: 
+  text-color:blue; 
 }
 .markdown-body pre {
   font-size: 85% !important;
@@ -1319,7 +1336,7 @@ mjx-container svg:focus,
 .index-header {
   color: var(--text-color);
   font-size: 1.5rem;
-  font-weight: 
+  font-weight:200;!important
   line-height: 1.4;
   white-space: nowrap;
   overflow: hidden;
@@ -1405,7 +1422,7 @@ post-custom {
 }
 .page-content strong,
 .post-content strong {
-  font-weight: bold;
+  text-color: blue;
 }
 .page-content > *:first-child,
 .post-content > *:first-child {
@@ -1509,7 +1526,7 @@ post-custom {
 }
 .toc-header {
   margin-bottom: 0.5rem;
-  font-weight: 300;
+  font-weight: 200;!important
   line-height: 1.2;
 }
 .toc-header,
@@ -1540,7 +1557,7 @@ post-custom {
   color: var(--text-color);
 }
 .tocbot-active-link {
-  font-weight: bold;
+  font-weight: 200;
   color: var(--link-hover-color);
 }
 .tocbot-is-collapsed {
@@ -1827,7 +1844,7 @@ note-default {
 }
 .about-name {
   font-size: 1.75rem;
-  font-weight: 
+  font-weight: 200;
 }
 .about-intro {
   font-size: 1rem;
@@ -1843,13 +1860,13 @@ note-default {
 }
 .category-item {
   font-size: 1.25rem;
-  font-weight: 
+  font-weight: 200;
   display: flex;
   align-items: center;
 }
 .category-subitem {
   font-size: 1rem;
-  font-weight: 
+  font-weight: 200;
 }
 .category-collapse {
   margin-left: 1.25rem;
@@ -1857,7 +1874,7 @@ note-default {
 }
 .category-count {
   font-size: 0.9rem;
-  font-weight: initial;
+  font-weight: 200;
   min-width: 1.3em;
   line-height: 1.3em;
   display: flex;
@@ -1947,14 +1964,14 @@ note-default {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: $text_color;
-  font-weight: 
+  color:var(--sec-color);
+  font-weight: 200;
 }
 .link-intro {
   max-height: 2rem;
   font-size: 0.85rem;
   line-height: 1.2;
-  color: var(--sec-text-color);
+  color: var(--sec-color);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
