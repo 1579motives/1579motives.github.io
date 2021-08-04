@@ -305,7 +305,7 @@ html {
 }
 html,
 body {
-  font-family: 'Noto Serif TC',serif,'Noto Serif SC';
+  font-family: 'Noto Serif TC','Noto Serif SC',sans-serif;
 }
 html,
 body,
@@ -895,7 +895,7 @@ img[lazyload] {
 .markdown-body {
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-family: 'Noto Serif TC', serif,'Noto Serif SC';
+  font-family: 'Noto Serif TC','Noto Serif SC',sans-serif;
   color: var(--post-text-color);
 }
 .markdown-body h1,
