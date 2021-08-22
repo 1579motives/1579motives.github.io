@@ -15,7 +15,7 @@
   color: #fff;
   max-width: calc(960px - 6rem);
   width: 80%;
-  font-weight:400;
+  font-weight:400;!important
 }
 @media (max-width: 575px) {
   .banner .page-header,
@@ -351,7 +351,7 @@ body a:hover {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
   @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
-  font-weight:400;
+  font-weight:400;!important
 }
 code {
   color: inherit;
@@ -1847,10 +1847,11 @@ note-default {
 }
 .about-name {
   font-size: 1.75rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 .about-intro {
   font-size: 1rem;
+  font-weight:300;
 }
 .about-icons > a:not(:last-child) {
   margin-right: 0.5rem;
@@ -1863,13 +1864,13 @@ note-default {
 }
 .category-item {
   font-size: 1.25rem;
-  font-weight: 200;
+  font-weight: 300;
   display: flex;
   align-items: center;
 }
 .category-subitem {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 .category-collapse {
   margin-left: 1.25rem;
@@ -1877,7 +1878,7 @@ note-default {
 }
 .category-count {
   font-size: 0.9rem;
-  font-weight: 200;
+  font-weight: 300;
   min-width: 1.3em;
   line-height: 1.3em;
   display: flex;
