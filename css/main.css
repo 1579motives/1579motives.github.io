@@ -169,7 +169,7 @@ footer .beian-police img {
 sup > a::before,
 .footnote-text::before {
   display: block;
-  content: "綿延";
+  content: "";
   font-family: "Noto Serif TC", "Note Serif SC", serif;
   margin-top: -5rem;
   height: 5rem;
@@ -195,7 +195,7 @@ sup > a::before,
   font-size: 0.95rem;
 }
 .footnote-list ol li:before {
-  font-family: "Noto Serif TC","Note Serif SC",Georgia,"Helvetica Neue", monospace, "Monaco";
+  font-family: "Noto Sans TC","Note Sans SC",Georgia,"Helvetica Neue", monospace, "Monaco";
   content: "[" counter(sectioncounter) "]";
   counter-increment: sectioncounter;
 }
@@ -207,9 +207,12 @@ sup > a::before,
 }
 @media (max-width: 767px) {
   #subtitle {
-    font-size: 1.5rem;
-    font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
-  @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
+    font-size: 1rem;
+    /*font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");*/
+    font-family: 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Source Han Sans', 'source-han-sans-sc', sans-serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet");/*沒找到*/
+  font-weight:300;/*思源黑體*/
   font-weight:300;!important
   }
 }
@@ -247,7 +250,7 @@ sup > a::before,
 }
 .scroll-down-bar i {
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 300;
   display: inline-block;
   position: relative;
   padding-top: 2rem;
@@ -309,15 +312,18 @@ sup > a::before,
 }
 html {
   font-size: 16px;
-  font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
+  /*font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
   @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
-  font-weight:300;
+  font-weight: 300;*/
 }
 html,
 body {
-  font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
+  font-family: 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Source Han Sans', 'source-han-sans-sc', sans-serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet");
+  font-weight: 300;/*思源黑體*/
+  /*思源宋體font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
   @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
-  font-weight:300;
+  font-weight:300;*/
 }
 html,
 body,
@@ -326,32 +332,43 @@ header {
   overflow-wrap: break-word;
   font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
   @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
-  font-weight:400;!important
+  font-weight: 400;!important
 }
 body {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   background-color: var(--body-bg-color);
   color: var(--text-color);
+  font-family: 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Source Han Sans', 'source-han-sans-sc', sans-serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet");
+  font-weight: 300;/*思源黑體*/
+  /*font-family: sans-serif;
   font-family: "Noto Serif TC","Noto Serif SC",serif;!important
   @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
-  font-weight:300;
+  font-weight:300;*/
 }
 body a {
   color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  font-family: 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Source Han Sans', 'source-han-sans-sc', sans-serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet");
+  font-weight: 300;/*思源黑體*/
+  /*font-family:sans-serif;
   font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
   @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
-  font-weight:400;!important
+  font-weight:400;!important*/
 }
 body a:hover {
   color: var(--link-hover-color);
   text-decoration: none;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
+  font-family: 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Source Han Sans', 'source-han-sans-sc', sans-serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet");
+  font-weight:300;/*思源黑體*/
+  /*font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
   @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
-  font-weight:400;!important
+  font-weight:400;!important*/
 }
 code {
   color: inherit;
@@ -919,8 +936,10 @@ img[lazyload] {
 .markdown-body {
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
-  @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");
+  /*font-family: 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet");*/
+  font-family: 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Source Han Sans', 'source-han-sans-sc', sans-serif;
+  @import url("https://fonts.loli.net/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet");
   font-weight:300;
   color: var(--post-text-color);
 }
@@ -1338,7 +1357,7 @@ mjx-container svg:focus,
 }
 .index-header {
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight:200;!important
   line-height: 1.4;
   white-space: nowrap;
